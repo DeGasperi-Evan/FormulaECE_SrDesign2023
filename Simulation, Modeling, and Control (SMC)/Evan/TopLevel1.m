@@ -1,10 +1,10 @@
 % This script will load a car accelerating from 0 over the course of 10
 % seconds
+global lap;
 Initialize();
-dt = .1;
 
 X_bar = SensorModel(X, U);
-for t = 0:dt:12
+while lap < 3
     clf;
     U = Control(X_bar);
     X = Dynamics(U, X);

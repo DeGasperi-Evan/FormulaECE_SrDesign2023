@@ -15,7 +15,7 @@ X(1) = X_dot(1) * dt + X(1);
 X(2) = X_dot(2) * dt + X(2);
 X(3) = X_dot(3) * dt + X(3);
 drawPool();
-drawCar([X(1), X(2)], X(3), U(2));
+drawCar([X(1), X(2)], X(3), U(2), 2);
 
 end
 
